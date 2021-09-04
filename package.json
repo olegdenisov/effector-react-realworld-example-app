@@ -6,7 +6,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "start": "cross-env webpack-dev-server",
-    "build": "npm run clean && NODE_ENV=production webpack",
+    "build": "npm run clean && cross-env NODE_ENV=production webpack",
     "clean": "cross-env rimraf public",
     "commit": "cross-env git-cz",
     "lint:file": "cross-env eslint . --ext .js,.jsx,.ts,.tsx --fix",
