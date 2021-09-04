@@ -21,6 +21,7 @@ module.exports = {
     open: false,
     historyApiFallback: true,
     disableHostCheck: true,
+    host: '0.0.0.0'
   },
   watch: true,
   watchOptions: {
